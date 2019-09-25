@@ -1,0 +1,65 @@
+
+.c-quienes-somos{
+    font-family: "Source Sans Pro", sans-serif;
+    
+}
+.c-quienes-somos__imagen{
+    max-width: 50%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.c-quienes-somos__titulo {
+    border-left: solid 3px var(--rojo-vc);
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.c-quienes-somos__titulo span{
+    color:var(--rojo-vc);
+}
+
+.c-quienes-somos__parrafos{
+    color:var(--gris-claro);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 768px){
+
+}
+
+
+
+
+/* pc */
+
+
+@media (min-width: 992px){
+
+    .c-quienes-somos__titulo {
+        
+      
+       
+        font-size: 50px;
+    }
+    .c-quienes-somos__parrafos {
+      
+        width: 83%;
+    }
+    
+}

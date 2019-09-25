@@ -1,0 +1,47 @@
+.u-bg-amarillo{
+    background-color:  var( --amarillo-transparente);
+    
+    color:var(--azul-vc);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+  
+    
+}
+
+.c-testimonial{
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+.c-testimonial__contenido{
+    padding: 5%;
+}
+
+.c-testimonial blockquote::before {
+    content: open-quote;
+    color: #f05351;
+    margin-right: 4px;
+    margin-left: -8px;
+}
+.c-testimonial blockquote::after {
+    content: close-quote;
+    color: #f05351;
+    margin-left: 4px;
+    margin-right: -8px;
+}
+
+.c-testimonial blockquote:before, 
+.c-testimonial blockquote:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 48px;
+    font-size: 50px;
+    opacity: 0.8;
+}
+
+.c-testimonial__persona{
+    color: var(--rojo-vc)
+}
+

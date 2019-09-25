@@ -1,0 +1,73 @@
+.c-portada{
+    padding-top: 12rem;
+}
+
+.c-portada__imagen{
+    display: flex;
+    justify-content: center
+
+}
+
+.c-portada__titulo span{
+
+    color: var(--rojo-vc) !important;
+
+}
+.c-portada__titulo{
+    text-align: center;
+}
+
+
+.c-portada__imagen-linea{
+    display: flex;
+    justify-content: center;
+}
+.c-portada__linea{
+    height: 90px;
+    width: 3px;
+ 
+}
+
+
+.c-portada--parrafo p{
+font-size: 26px;
+    color: var(--azul-vc);
+}
+
+/* tablet */
+
+@media (min-width: 768px){
+    .c-portada__titulo{
+      
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+/* pc */
+
+
+
+@media (min-width: 992px){
+
+    .c-portada__titulo{
+       
+        font-weight: 800;
+        margin-bottom: 20px;
+        font-size: 90px;
+    }
+    
+    
+}
+
+

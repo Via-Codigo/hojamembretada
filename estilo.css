@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+}
+li img{
+    padding-bottom: 25px;
+}
+
+.viacodigo_imagen{
+    width:100%;
+}
+
+.viacodigo_listado_iconos{
+    display: flex;
+}
+.viacodigo_listado{
+    display: flex;
+    list-style: none;
+}
+
+.viacodigo_listado li{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-left: 25px;
+}
+
+.viacodigo__raya-roja{
+    border-bottom: solid #f05351 5rem;
+}
+
+.viacodigo_link-azul{
+    color: #174665
+}
+.viacodigo_link-rojo{
+    color: #f05351;
+
+}
+.viacodigo_iconos{
+    height: 40px;
+    
+}

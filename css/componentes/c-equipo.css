@@ -1,0 +1,166 @@
+
+.c-equipo{
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+}
+
+.c-equipo__titulo{
+text-align: center;
+font-size:30px;
+padding-bottom: 3rem;
+}
+.c-equipo__titulo span{
+    color:var(--rojo-vc);
+
+}
+
+.c-equipo-integrante {
+ 
+display: flex;
+align-items: flex-end;
+height:390px;
+cursor: pointer;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+margin-bottom: 15px;
+
+
+}
+
+
+.c-equipo-integrante--pedro{
+    background-image: url(../../images/fotos/pedro-340.jpg);
+
+}
+.c-equipo-integrante--alex{
+
+    background-image: url(../../images/fotos/alex-340.jpg);
+}
+.c-equipo-integrante--maria{
+
+    background-image: url(../../images/fotos/maricarmen-340.jpg);
+}
+.c-equipo-integrante--luis{
+
+    background-image: url(../../images/fotos/luis-340.jpg);
+}
+.c-equipo-integrante--carlos{
+
+    background-image: url(../../images/fotos/carlos-340.jpg);
+}
+.c-equipo-integrante--juan{
+
+    background-image: url(../../images/fotos/juan-340.jpg);
+}
+.c-equipo-integrante--nestor{
+
+    background-image: url(../../images/fotos/nestor-340.jpg);
+}
+.c-equipo-integrante--esen{
+
+    background-image: url(../../images/fotos/Esen-340.jpeg);
+}
+
+
+
+.c-equipo .row .col-12:nth-child(odd) .c-equipo-integrante:hover .c-equipo-integrante__contenido {
+    background-color: var(--amarillo-vc);
+}
+.c-equipo .row .col-12:nth-child(even) .c-equipo-integrante:hover .c-equipo-integrante__contenido {
+    background-color: var(--rojo-vc);
+}
+.c-equipo-integrante__contenido {
+    width: 100%;
+    background-color: var(--claro01);
+    padding: 1rem;
+}
+.c-equipo-integrante__resumen{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.c-equipo-integrante__parrafo{
+font-size: 14px;
+    display: none;
+    width: 100%;
+
+}
+
+.c-equipo .row .col-12:nth-child(odd) .abierto .c-equipo-integrante__contenido{
+    background-color: var(--amarillo-vc);
+    height: 100%;
+}
+.c-equipo .row .col-12:nth-child(even) .abierto .c-equipo-integrante__contenido{
+    background-color: var(--rojo-vc);
+    height: 100%;
+}
+
+.abierto .c-equipo-integrante__resumen{
+    display: none;
+}
+
+.abierto .c-equipo-integrante__parrafo{
+    
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+    .c-equipo-integrante {
+ 
+        
+        
+       
+        
+       
+     
+        
+        margin-bottom: 30px;
+        
+        
+        }
+       
+     
+
+
+
+
+}
+
+
+
+
+@media (min-width: 992px){
+    
+    .c-equipo__titulo{
+          
+        font-size:50px;
+       
+        }
+
+
+
+    
+
+   
+}
+

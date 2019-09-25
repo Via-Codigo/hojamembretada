@@ -1,0 +1,91 @@
+
+.c-estacion-paz{
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+.c-estacion-paz__titulo{
+    font-size: 30px;
+    text-align: center;
+}
+.c-estacion-paz__titulo span{
+    color:var(--rojo-vc);
+}
+.c-estacion-paz__parrafo{
+    text-align: center;
+    color: var(--gris-claro);
+
+}
+.c-estacion-paz__div{
+    text-align: center;
+    font-size: 60px;
+}
+.c-estacion-paz__div h3 span{
+    color:var(--rojo-vc);
+}
+.c-estacion-paz__div h3{
+    font-size:21px;
+}
+
+.c-estacion-paz__link{
+    border-bottom: solid 3px var(--amarillo-vc);
+    text-align: center;
+    color: var(--rojo-vc);
+    font-weight: bold;
+    transition: all 0.15s;
+
+}
+.c-estacion-paz__link:hover{
+    color:var(--azul-vc);
+    text-decoration: none;
+
+}
+
+.c-estacion-paz__div-link{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 768px){
+    
+
+}
+
+
+
+
+/* pc */
+
+
+@media (min-width: 992px){
+    .c-estacion-paz__titulo{
+        font-size: 50px;
+       
+    }
+
+    
+
+}
