@@ -1,22 +1,39 @@
 body {
   padding: 0;
+  background-color: grey;
 }
-.viacodigo_ancho {
+
+.hoja {
+  height: 26cm;
   width: 21cm;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
+
 a {
   text-decoration: none;
 }
-li img {
-  padding-bottom: 25px;
+
+.container-fluid {
+  width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
 }
 
 .viacodigo_imagen {
   width: 100%;
+  transform: scale(1.8);
+
+  position: relative;
+  top: 40%;
 }
 
 .viacodigo_listado_iconos {
-  display: flex;
+  padding: 20px 0;
 }
 .viacodigo_listado {
   display: flex;
@@ -27,28 +44,49 @@ li img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   padding-left: 25px;
 }
 
 .viacodigo__raya-roja {
-  border-bottom: solid #f05351 5rem;
+  border-bottom: solid #f05351 2rem;
 }
 
 .viacodigo_link-azul {
   color: #174665;
-  font-size: 7px;
+  font-size: 8px;
 }
 .viacodigo_link-rojo {
   color: #f05351;
-  font-size: 7px;
+  font-size: 8px;
 }
-.viacodigo_iconos {
-  height: 40px;
+.viacodigo_iconos__circulo {
+  border-radius: 50%;
+  background-color: #f05351;
+  height: 21px;
+  width: 21px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.viacodigo_iconos__circulo img {
+  position: absolute;
+}
+.icono--sobre {
+  background-color: aqua;
+}
+
+.icono--sobre img {
+  top: 25%;
+  left: 25%;
 }
 .viacodigo_footer-raya {
-  border-bottom: solid #f05351 26px;
+  height: 26px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   margin-top: 3cm;
+  background-color: #f05351;
 }
 span {
   color: red;
@@ -58,6 +96,7 @@ span {
   justify-content: flex-end;
   font-size: 12px;
   padding-right: 2rem;
+  padding-bottom: 4rem;
 }
 
 .viacodigo_asuntos {
@@ -84,4 +123,5 @@ span {
 }
 .viacondigo_contenido {
   padding-left: 5rem;
+  padding-top: 5rem;
 }

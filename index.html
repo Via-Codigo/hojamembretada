@@ -10,101 +10,119 @@
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
-  <body class="viacodigo_ancho">
-    <header class="container-fluid">
-      <div class="viacodigo">
-        <div class="row">
-          <div class="col-3">
-            <h1>
-              <img
-                class="viacodigo_imagen"
-                src="imagenes/logo_azul_fondo_blanco (1).png"
-                alt=""
-              />
-            </h1>
-          </div>
+  <body>
+    <div class="hoja">
+      <header class="container-fluid">
+        <div class="viacodigo">
+          <div class="row">
+            <div class="col-4">
+              <h1>
+                <img
+                  class="viacodigo_imagen"
+                  src="imagenes/logo_azul_fondo_blanco (1).png"
+                  alt=""
+                />
+              </h1>
+            </div>
 
-          <div class="col-9">
-            <div class="viacodigo__raya-roja"></div>
-            <div class="viacodigo_listado_iconos">
-              <ul class="viacodigo_listado">
-                <li>
-                  <div class="viacodigo_iconos">
-                    <img src="imagenes/libro.png" alt="" />
-                  </div>
-                  <a class="viacodigo_link-azul" href=""
-                    >Calle Junín 301, Miraflores</a
-                  >
-                </li>
+            <div class="col-8">
+              <div class="viacodigo__raya-roja"></div>
+              <div class="viacodigo_listado_iconos">
+                <ul class="viacodigo_listado row no-gutters">
+                  <li class="col-3 ">
+                    <div class="viacodigo_iconos ">
+                      <div class="viacodigo_iconos__circulo icono--libro">
+                        <img src="imagenes/libro.png" alt="" />
+                      </div>
+                    </div>
+                    <a class="viacodigo_link-azul" href=""
+                      >Calle Junín 301, Miraflores</a
+                    >
+                  </li>
 
-                <li>
-                  <div class="viacodigo_iconos">
-                    <img src="imagenes/telf.png" alt="" />
-                  </div>
-                  <a class="viacodigo_link-azul" href="">(51) 961-738608</a>
-                </li>
+                  <li class="col-3 collapsed">
+                    <div class="viacodigo_iconos">
+                      <div class="viacodigo_iconos__circulo icono--telf">
+                        <img src="imagenes/telf.png" alt="" />
+                      </div>
+                    </div>
+                    <a class="viacodigo_link-azul" href="">(51) 961-738608</a>
+                  </li>
 
-                <li>
-                  <div class="viacodigo_iconos">
-                    <img src="imagenes/sobre.png" alt="" />
-                  </div>
-                  <a class="viacodigo_link-azul" href="">info@viacodigo.com</a>
-                </li>
+                  <li class="col-3 collapsed">
+                    <div class="viacodigo_iconos">
+                      <div class="viacodigo_iconos__circulo icono--sobre">
+                        <img src="imagenes/sobre.png" alt="" />
+                      </div>
+                    </div>
+                    <a class="viacodigo_link-azul" href=""
+                      >info@viacodigo.com</a
+                    >
+                  </li>
 
-                <li>
-                  <div class="viacodigo_iconos">
-                    <img src="imagenes/hoja.png" alt="" />
-                  </div>
-                  <a class="viacodigo_link-rojo" href="">www.viacodigo.com</a>
-                </li>
-              </ul>
+                  <li class="col-3 collapsed">
+                    <div class="viacodigo_iconos">
+                      <div class="viacodigo_iconos__circulo icono--hoja">
+                        <img src="imagenes/hoja.png" alt="" />
+                      </div>
+                    </div>
+                    <a class="viacodigo_link-rojo" href="">www.viacodigo.com</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+      </header>
+
+      <div class="container">
+        <main class="viacondigo_contenido">
+          <div class="viacodigo_fecha">
+            <p>
+              lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
+            </p>
+          </div>
+          <div class="contenido-carta" contenteditable="true">
+            lorem de prueba
+          </div>
+
+          <div class="viacodigo_datos">
+            <p>Dr./Lic/Mg.</p>
+            <p>Nombre de la persona aquien va dirigida la carta</p>
+            <p>
+              Director del centro juvenil de diagnostico y rehabilitacion de
+              lima
+              <span>(cargo)</span>
+            </p>
+            <p>PODER JUDICAL <span>(institucion)</span></p>
+          </div>
+          <div class="viacodigo_asuntos">
+            <p>Asunto: <span>solicitud de...</span></p>
+          </div>
+          <div class="viacodigo_consideracion">
+            <p>De mi especial consideracion:</p>
+          </div>
+          <div class="viacodigo_saludos">
+            <p>
+              Muy estimado <span>(cargo) </span>, después de saludarlo muy
+              atentamente me dirijo ah usted para...
+            </p>
+            <p>
+              sin otro particular, agradesco de antemano se pueda brindar las
+              facilidades para..
+            </p>
+          </div>
+          <div class="viacodigo_atentamente">
+            <p>Atentamente</p>
+          </div>
+
+          <div class="viacodigo_firma">
+            <span>Nombre de la persona cargo</span>
+          </div>
+        </main>
       </div>
-    </header>
 
-    <section class="container">
-      <div class="viacondigo_contenido">
-        <div class="viacodigo_fecha">
-          <p>lima, <span>xx</span> de <span>xxx</span> del <span>2019</span></p>
-        </div>
-
-        <div class="viacodigo_datos">
-          <p>Dr./Lic/Mg.</p>
-          <p>Nombre de la persona aquien va dirigida la carta</p>
-          <p>
-            Director del centro juvenil de diagnostico y rehabilitacion de lima
-            <span>(cargo)</span>
-          </p>
-          <p>PODER JUDICAL <span>(institucion)</span></p>
-        </div>
-        <div class="viacodigo_asuntos">
-          <p>Asunto: <span>solicitud de...</span></p>
-        </div>
-        <div class="viacodigo_consideracion">
-          <p>De mi especial consideracion:</p>
-        </div>
-        <div class="viacodigo_saludos">
-          <p>
-            Muy estimado <span>(cargo) </span>, después de saludarlo muy
-            atentamente me dirijo ah usted para...
-          </p>
-          <p>
-            sin otro particular, agradesco de antemano se pueda brindar las
-            facilidades para..
-          </p>
-        </div>
-        <div class="viacodigo_atentamente">
-          <p>Atentamente</p>
-        </div>
-
-        <div class="viacodigo_firma">
-          <span>Nombre de la persona cargo</span>
-        </div>
-      </div>
-    </section>
-
-    <footer class="viacodigo_footer-raya"></footer>
+      <footer class="viacodigo_footer-raya "></footer>
+    </div>
   </body>
 </html>
