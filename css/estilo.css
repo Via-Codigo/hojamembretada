@@ -86,7 +86,7 @@ a {
   position: absolute;
   bottom: 0;
   margin-top: 3cm;
-  background-color: #f05351;
+  border: 15px solid #f05351;
 }
 span {
   color: red;
