@@ -1,3 +1,7 @@
+
+.viacodigo_ancho{
+    width: ;
+}
 a{
     text-decoration: none;
 }
@@ -39,4 +43,24 @@ padding-left: 25px;
 .viacodigo_iconos{
     height: 40px;
     
+}
+.viacodigo_footer-raya{
+    border-bottom: solid #f05351 26px;
+}
+span{
+    color:red;
+
+}
+.viacodigo_fecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.viacodigo_asuntos{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.viacodigo_consideracion{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
