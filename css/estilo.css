@@ -72,14 +72,42 @@ a {
 .viacodigo_iconos__circulo img {
   position: absolute;
 }
+
+.icono--libro{
+  background-color:#63c1a2;
+
+}
+.icono--libro img{
+  top: 20%;
+  left: 25%;
+
+}
+.icono--telf{
+  background-color: #fdd15a;
+
+}
+.icono--telf img{
+  top: 20%;
+  left: 20%;
+
+}
 .icono--sobre {
-  background-color: aqua;
+  background-color: #134568;
 }
 
 .icono--sobre img {
-  top: 25%;
-  left: 25%;
+  top: 28%;
+  left: 18%;
 }
+.icono--hoja{
+  background-color: #ef514f;
+}
+.icono--hoja img{
+  top: 15%;
+  left: 22%;
+
+}
+
 .viacodigo_footer-raya {
   height: 26px;
   width: 100%;
