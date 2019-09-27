@@ -29,7 +29,7 @@ a {
   transform: scale(1.8);
 
   position: relative;
-  top: 40%;
+  margin-top: 28%;
 }
 
 .viacodigo_listado_iconos {
@@ -73,23 +73,19 @@ a {
   position: absolute;
 }
 
-.icono--libro{
-  background-color:#63c1a2;
-
+.icono--libro {
+  background-color: #63c1a2;
 }
-.icono--libro img{
+.icono--libro img {
   top: 20%;
   left: 25%;
-
 }
-.icono--telf{
+.icono--telf {
   background-color: #fdd15a;
-
 }
-.icono--telf img{
+.icono--telf img {
   top: 20%;
   left: 20%;
-
 }
 .icono--sobre {
   background-color: #134568;
@@ -99,13 +95,12 @@ a {
   top: 28%;
   left: 18%;
 }
-.icono--hoja{
+.icono--hoja {
   background-color: #ef514f;
 }
-.icono--hoja img{
+.icono--hoja img {
   top: 15%;
   left: 22%;
-
 }
 
 .viacodigo_footer-raya {
@@ -149,7 +144,10 @@ span {
 .viacodigo_firma {
   font-size: 12px;
 }
-.viacondigo_contenido {
+.viacodigo_contenido {
   padding-left: 5rem;
   padding-top: 5rem;
+
+  font-family: "Oxygen", sans-serif;
+  font-size: 12px;
 }
