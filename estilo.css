@@ -1,6 +1,6 @@
 
 .viacodigo_ancho{
-    width: ;
+    width: 21cm;
 }
 a{
     text-decoration: none;
@@ -34,10 +34,13 @@ padding-left: 25px;
 }
 
 .viacodigo_link-azul{
-    color: #174665
+    color: #174665;
+    font-size: 7px;
+    
 }
 .viacodigo_link-rojo{
     color: #f05351;
+    font-size: 7px;
 
 }
 .viacodigo_iconos{
@@ -54,13 +57,33 @@ span{
 .viacodigo_fecha{
     display: flex;
     justify-content: flex-end;
+    font-size: 12px;
+    padding-right: 2rem;
 }
 
 .viacodigo_asuntos{
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 12px;
 }
 .viacodigo_consideracion{
     padding-bottom: 1rem;
     padding-top: 1rem;
+    font-size: 12px;
+}
+.viacodigo_datos{
+    font-size: 12px;
+}
+.viacodigo_saludos{
+    font-size: 12px;
+}
+.viacodigo_atentamente{
+font-size: 12px
+}
+.viacodigo_firma{
+    font-size: 12px;
+
+}
+.viacondigo_contenido{
+    padding-left: 5rem;
 }
