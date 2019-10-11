@@ -111,9 +111,7 @@ a {
   margin-top: 3cm;
   border: 15px solid #f05351;
 }
-span {
-  color: red;
-}
+
 .viacodigo_fecha {
   display: flex;
   justify-content: flex-end;

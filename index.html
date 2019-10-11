@@ -82,11 +82,11 @@
       <div class="container">
         <main class="viacodigo_contenido">
           <div class="viacodigo_fecha">
-            <p contenteditable="true">
+            <p id="fecha" contenteditable="true">
               lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
             </p>
           </div>
-          <div class="contenido-carta" contenteditable="true">
+          <div id="editor" class="contenido-carta" contenteditable="true">
             Escribe aquí el texto que desees
           </div>
         </main>
@@ -94,5 +94,48 @@
 
       <footer class="viacodigo_footer-raya "></footer>
     </div>
+
+    <script
+      src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+    <script>
+      var letterBodyConfig = {
+        selector: "#editor",
+        menubar: false,
+        inline: true,
+        plugins: ["link", "lists", "autolink"],
+        toolbar: [
+          "undo redo | bold italic underline |  fontsizeselect",
+          "forecolor backcolor | alignleft aligncenter alignright alignfull | numlist bullist outdent indent"
+        ],
+        valid_elements: "p[style],strong,em,span[style],a[href],ul,ol,li",
+        valid_styles: {
+          "*": "font-size,font-family,color,text-decoration,text-align"
+        },
+        // powerpaste_word_import: "clean",
+        // powerpaste_html_import: "clean",
+        content_css: ["https://fonts.googleapis.com/css?family=Oxygen"]
+      };
+      var fechaConfig = {
+        selector: "#fecha",
+        menubar: false,
+        inline: true,
+        plugins: ["link", "lists", "autolink"],
+        toolbar: [
+          "undo redo | bold italic underline |  fontsizeselect",
+          "forecolor   "
+        ],
+        valid_elements: "p[style],strong,em,span[style],a[href],ul,ol,li",
+        valid_styles: {
+          "*": "font-size,font-family,color,text-decoration,text-align"
+        },
+        // powerpaste_word_import: "clean",
+        // powerpaste_html_import: "clean",
+        content_css: ["https://fonts.googleapis.com/css?family=Oxygen"]
+      };
+      tinymce.init(fechaConfig);
+      tinymce.init(letterBodyConfig);
+    </script>
   </body>
 </html>
