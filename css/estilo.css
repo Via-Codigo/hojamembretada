@@ -152,3 +152,17 @@ a {
 .contenido-carta {
   padding-right: 5rem;
 }
+
+@media print {
+  .contenido-carta {
+    padding-right: 0rem;
+  }
+
+  .viacodigo_contenido {
+    padding-left: 0rem;
+  }
+
+  .viacodigo_fecha {
+    padding-right: orem;
+  }
+}
