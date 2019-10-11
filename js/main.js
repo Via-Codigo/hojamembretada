@@ -80,3 +80,8 @@ fechaContenedor.addEventListener("mouseleave", function() {
 botonGuardar.addEventListener("click", guardarEstado);
 
 window.addEventListener("load", cargarEstado);
+window.addEventListener("load", function() {
+  setInterval(() => {
+    guardarEstado();
+  }, 1000 * 60 * 5);
+});
