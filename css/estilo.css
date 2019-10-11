@@ -153,6 +153,20 @@ a {
   padding-right: 5rem;
 }
 
+#botonBorrado {
+  background-color: #f05351;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  cursor: pointer;
+}
+#botonBorrado:hover {
+  background-color: #134568;
+}
+
 @media print {
   .contenido-carta {
     padding-right: 0rem;
@@ -164,5 +178,8 @@ a {
 
   .viacodigo_fecha {
     padding-right: orem;
+  }
+  #botonBorrado {
+    display: none;
   }
 }
