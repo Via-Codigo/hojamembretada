@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="hoja">
+    <div class="hoja" id="hoja-0">
       <header class="container-fluid">
         <div class="viacodigo">
           <div class="row">
@@ -82,11 +82,11 @@
       <div class="container">
         <main class="viacodigo_contenido">
           <div id="fecha-container" class="viacodigo_fecha">
-            <p id="fecha" contenteditable="true">
+            <p id="fecha-0" contenteditable="true">
               lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
             </p>
           </div>
-          <div id="editor" class="contenido-carta" contenteditable="true">
+          <div id="editor-0" class="contenido-carta" contenteditable="true">
             Escribe aquí el texto que desees
           </div>
         </main>
@@ -96,6 +96,7 @@
     </div>
     <div class="controls">
       <button id="guardar">Guardar</button>
+      <button id="nuevaPagina">+</button>
     </div>
 
     <script
@@ -104,7 +105,7 @@
     ></script>
     <script>
       var letterBodyConfig = {
-        selector: "#editor",
+        selector: "#editor-0",
         menubar: false,
         inline: true,
         plugins: ["link", "lists", "autolink"],
@@ -121,7 +122,7 @@
         content_css: ["https://fonts.googleapis.com/css?family=Oxygen"]
       };
       var fechaConfig = {
-        selector: "#fecha",
+        selector: "#fecha-0",
         menubar: false,
         inline: true,
         plugins: ["link", "lists", "autolink"],

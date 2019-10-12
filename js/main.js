@@ -34,19 +34,32 @@ function crearBotonEliminar() {
   }
 }
 
-function guardarEstado() {
-  var data = {
-    fecha: "",
-    cuerpo: "",
-    timestamp: ""
+/**
+ *
+ * @param {int} numHoja El numero que especifica la hoja
+ */
+function guardarHoja(numHoja) {
+  return {
+    fecha: document.getElementById(`fecha-${numHoja}`).innerHTML,
+    cuerpo: document.getElementById(`editor-${numHoja}`).innerHTML
   };
-
-  // esto debería estar en otro lado
+}
+/**
+ * Cada hoja es un elemento del array que contiene su propia información
+ */
+function guardarEstado() {
+  var hojas = document.getElementsByClassName("hoja");
+  var data = {
+    timestamp: "",
+    hojas: []
+  };
+  // conseguimos la fecha de guardado
   data.timestamp = Date.now();
-  data.fecha = document.getElementById("fecha").innerHTML;
-  data.cuerpo = document.getElementById("editor").innerHTML;
+  for (let i = 0; i < hojas.length; i++) {
+    data.hojas.push(guardarHoja(i));
+  }
 
-  // convertimos a string
+  // convertimos a string y guardamos
   var dataAsString = JSON.stringify(data);
   localStorage.setItem("data", dataAsString);
 }
@@ -63,9 +76,13 @@ function cargarEstado() {
         ).toISOString()}`
       )
     ) {
-      document.getElementById("fecha").innerHTML = localData.fecha;
-      localData.cuerpo = document.getElementById("editor").innerHTML =
-        localData.cuerpo;
+      var hojas = localData.hojas;
+      for (let i = 0; i < hojas.length; i++) {
+        document.getElementById(`fecha-${i}`).innerHTML =
+          localData.hojas[i].fecha;
+        document.getElementById(`editor-${i}`).innerHTML =
+          localData.hojas[i].cuerpo;
+      }
     }
   }
 }

@@ -170,16 +170,34 @@ a {
 .controls {
   position: fixed;
   bottom: 5vh;
+
+  display: flex;
+  height: 120px;
 }
 
 .controls button {
   cursor: pointer;
   border: none;
-  padding: 5px 10px;
 }
+
 .controls button:hover {
   background-color: #505050;
   color: #fff;
+}
+.controls button#guardar {
+  padding: 5px 10px;
+  height: 40px;
+  align-self: self-end;
+}
+
+.controls button#nuevaPagina {
+  font-size: 3.5rem;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  position: absolute;
+  line-height: 55px;
 }
 
 /**
