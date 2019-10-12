@@ -15,84 +15,88 @@
   </head>
 
   <body>
-    <div class="hoja" id="hoja-0">
-      <header class="container-fluid">
-        <div class="viacodigo">
-          <div class="row">
-            <div class="col-4">
-              <h1>
-                <img
-                  class="viacodigo_imagen"
-                  src="imagenes/logo_azul_fondo_blanco (1).png"
-                  alt=""
-                />
-              </h1>
-            </div>
+    <div id="hojasContainer">
+      <div class="hoja" id="hoja-0">
+        <header class="container-fluid">
+          <div class="viacodigo">
+            <div class="row">
+              <div class="col-4">
+                <h1>
+                  <img
+                    class="viacodigo_imagen"
+                    src="imagenes/logo_azul_fondo_blanco (1).png"
+                    alt=""
+                  />
+                </h1>
+              </div>
 
-            <div class="col-8">
-              <div class="viacodigo__raya-roja"></div>
-              <div class="viacodigo_listado_iconos">
-                <ul class="viacodigo_listado row no-gutters">
-                  <li class="col-3 ">
-                    <div class="viacodigo_iconos ">
-                      <div class="viacodigo_iconos__circulo icono--libro">
-                        <img src="imagenes/libro.png" alt="" />
+              <div class="col-8">
+                <div class="viacodigo__raya-roja"></div>
+                <div class="viacodigo_listado_iconos">
+                  <ul class="viacodigo_listado row no-gutters">
+                    <li class="col-3 ">
+                      <div class="viacodigo_iconos ">
+                        <div class="viacodigo_iconos__circulo icono--libro">
+                          <img src="imagenes/libro.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <a class="viacodigo_link-azul" href=""
-                      >Calle Junín 301, Miraflores</a
-                    >
-                  </li>
+                      <a class="viacodigo_link-azul" href=""
+                        >Calle Junín 301, Miraflores</a
+                      >
+                    </li>
 
-                  <li class="col-3 collapsed">
-                    <div class="viacodigo_iconos">
-                      <div class="viacodigo_iconos__circulo icono--telf">
-                        <img src="imagenes/telf.png" alt="" />
+                    <li class="col-3 collapsed">
+                      <div class="viacodigo_iconos">
+                        <div class="viacodigo_iconos__circulo icono--telf">
+                          <img src="imagenes/telf.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <a class="viacodigo_link-azul" href="">(51) 961-738608</a>
-                  </li>
+                      <a class="viacodigo_link-azul" href="">(51) 961-738608</a>
+                    </li>
 
-                  <li class="col-3 collapsed">
-                    <div class="viacodigo_iconos">
-                      <div class="viacodigo_iconos__circulo icono--sobre">
-                        <img src="imagenes/sobre.png" alt="" />
+                    <li class="col-3 collapsed">
+                      <div class="viacodigo_iconos">
+                        <div class="viacodigo_iconos__circulo icono--sobre">
+                          <img src="imagenes/sobre.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <a class="viacodigo_link-azul" href=""
-                      >info@viacodigo.com</a
-                    >
-                  </li>
+                      <a class="viacodigo_link-azul" href=""
+                        >info@viacodigo.com</a
+                      >
+                    </li>
 
-                  <li class="col-3 collapsed">
-                    <div class="viacodigo_iconos">
-                      <div class="viacodigo_iconos__circulo icono--hoja">
-                        <img src="imagenes/hoja.png" alt="" />
+                    <li class="col-3 collapsed">
+                      <div class="viacodigo_iconos">
+                        <div class="viacodigo_iconos__circulo icono--hoja">
+                          <img src="imagenes/hoja.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <a class="viacodigo_link-rojo" href="">www.viacodigo.com</a>
-                  </li>
-                </ul>
+                      <a class="viacodigo_link-rojo" href=""
+                        >www.viacodigo.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+        </header>
+
+        <div class="container">
+          <div class="viacodigo_contenido">
+            <div id="fecha-container" class="viacodigo_fecha">
+              <p id="fecha-0" contenteditable="true">
+                lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
+              </p>
+            </div>
+            <div id="editor-0" class="contenido-carta" contenteditable="true">
+              Escribe aquí el texto que desees
+            </div>
+          </div>
         </div>
-      </header>
 
-      <div class="container">
-        <main class="viacodigo_contenido">
-          <div id="fecha-container" class="viacodigo_fecha">
-            <p id="fecha-0" contenteditable="true">
-              lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
-            </p>
-          </div>
-          <div id="editor-0" class="contenido-carta" contenteditable="true">
-            Escribe aquí el texto que desees
-          </div>
-        </main>
+        <footer class="viacodigo_footer-raya "></footer>
       </div>
-
-      <footer class="viacodigo_footer-raya "></footer>
     </div>
     <div class="controls">
       <button id="guardar">Guardar</button>
