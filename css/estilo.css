@@ -154,7 +154,7 @@ a {
   padding-right: 5rem;
 }
 
-#botonBorrado {
+[id*="botonBorrado-"] {
   background-color: #f05351;
   color: #fff;
   border: none;

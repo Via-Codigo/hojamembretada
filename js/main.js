@@ -1,11 +1,43 @@
 /**
  * Elementos con los que trabajaremos
  */
-var fechaContenedor = document.getElementById("fecha-container");
 
 var botonGuardar = document.getElementById("guardar");
 var botonNuevaHoja = document.getElementById("nuevaPagina");
 
+///////////////////////////////////////////
+// Hay qie ver que hacemos con esto de la fecha y su borrado para las demás hojas
+
+function crearBotonesEliminarFecha() {
+  var hojas = document.getElementsByClassName("hoja");
+  for (let i = 0; i < hojas.length; i++) {
+    var fechaContenedor = document.getElementById(`fecha-container-${i}`);
+    fechaContenedor.addEventListener("mouseenter", function() {
+      crearBotonEliminar(i);
+    });
+    fechaContenedor.addEventListener("mouseleave", function() {
+      borrarElementoHTML(`botonBorrado-${i}`);
+    });
+  }
+}
+/**
+ * Crea el boton de eliminar para la fecha
+ */
+function crearBotonEliminar(numHoja) {
+  // si no lo encuentras crealo
+  if (!document.getElementById(`botonBorrado-${numHoja}`)) {
+    var botonBorrado = document.createElement("button");
+    botonBorrado.id = `botonBorrado-${numHoja}`;
+    botonBorrado.innerText = "borrar fecha";
+    var fechaContenedor = document.getElementById(`fecha-container-${numHoja}`);
+    fechaContenedor.appendChild(botonBorrado);
+
+    botonBorrado.addEventListener("click", function() {
+      borrarElementoHTML(`fecha-container-${numHoja}`);
+    });
+  }
+}
+/////////////////////////////////////////
 /**
  *
  * @param {HTMLElement} idHTML
@@ -17,23 +49,7 @@ function borrarElementoHTML(idHTML) {
     elemento.remove();
   }
 }
-//////////////////////////////////////////
-/**
- * Crea el boton de eliminar para la fecha
- */
-function crearBotonEliminar() {
-  // si no lo encuentras crealo
-  if (!document.getElementById("botonBorrado")) {
-    var botonBorrado = document.createElement("button");
-    botonBorrado.id = "botonBorrado";
-    botonBorrado.innerText = "borrar fecha";
-    fechaContenedor.appendChild(botonBorrado);
 
-    botonBorrado.addEventListener("click", function() {
-      borrarElementoHTML("fecha-container");
-    });
-  }
-}
 /////////////////////////////////////////////////////
 /**
  *
@@ -116,6 +132,7 @@ function crearNuevaHoja() {
   hojasContainer.appendChild(nuevaHoja);
 
   initEditors();
+  crearBotonesEliminarFecha();
 }
 
 /////////////////////////////////////////////////////////////
@@ -123,16 +140,12 @@ function crearNuevaHoja() {
  * Crear event listeners todo esto debería ser una init func
  */
 
-// Hay qie ver que hacemos con esto de la fecha y su borrado para las demás hojas
-fechaContenedor.addEventListener("mouseenter", crearBotonEliminar);
-fechaContenedor.addEventListener("mouseleave", function() {
-  borrarElementoHTML("botonBorrado");
-});
 botonGuardar.addEventListener("click", guardarEstado);
 botonNuevaHoja.addEventListener("click", crearNuevaHoja);
 window.addEventListener("load", cargarEstado);
 
 initEditors();
+crearBotonesEliminarFecha();
 window.addEventListener("load", function() {
   setInterval(() => {
     guardarEstado();
@@ -208,7 +221,7 @@ var plantillaHoja = numHoja => `
 
       <div class="container">
         <div class="viacodigo_contenido">
-          <div id="fecha-container" class="viacodigo_fecha">
+          <div id="fecha-container-${numHoja}" class="viacodigo_fecha">
             <p id="fecha-${numHoja}" contenteditable="true">
               lima, <span>xx</span> de <span>xxx</span> del <span>2019</span>
             </p>
