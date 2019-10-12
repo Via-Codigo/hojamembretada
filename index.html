@@ -103,44 +103,7 @@
       src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"
       referrerpolicy="origin"
     ></script>
-    <script>
-      var letterBodyConfig = {
-        selector: "#editor-0",
-        menubar: false,
-        inline: true,
-        plugins: ["link", "lists", "autolink"],
-        toolbar: [
-          "undo redo | bold italic underline |  fontsizeselect",
-          "forecolor backcolor | alignleft aligncenter alignright alignfull | numlist bullist outdent indent"
-        ],
-        valid_elements: "p[style],strong,em,span[style],a[href],ul,ol,li",
-        valid_styles: {
-          "*": "font-size,font-family,color,text-decoration,text-align"
-        },
-        // powerpaste_word_import: "clean",
-        // powerpaste_html_import: "clean",
-        content_css: ["https://fonts.googleapis.com/css?family=Oxygen"]
-      };
-      var fechaConfig = {
-        selector: "#fecha-0",
-        menubar: false,
-        inline: true,
-        plugins: ["link", "lists", "autolink"],
-        toolbar: [
-          "undo redo | bold italic underline |  fontsizeselect",
-          "forecolor   "
-        ],
-        valid_elements: "p[style],strong,em,span[style],a[href],ul,ol,li",
-        valid_styles: {
-          "*": "font-size,font-family,color,text-decoration,text-align"
-        },
-        // powerpaste_word_import: "clean",
-        // powerpaste_html_import: "clean",
-        content_css: ["https://fonts.googleapis.com/css?family=Oxygen"]
-      };
-      tinymce.init(fechaConfig);
-      tinymce.init(letterBodyConfig);
-    </script>
+    <script src="./js/editor.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
