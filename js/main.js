@@ -139,18 +139,19 @@ function crearNuevaHoja() {
 /**
  * Crear event listeners todo esto debería ser una init func
  */
+function init() {
+  botonGuardar.addEventListener("click", guardarEstado);
+  botonNuevaHoja.addEventListener("click", crearNuevaHoja);
+  window.addEventListener("load", cargarEstado);
 
-botonGuardar.addEventListener("click", guardarEstado);
-botonNuevaHoja.addEventListener("click", crearNuevaHoja);
-window.addEventListener("load", cargarEstado);
-
-initEditors();
-crearBotonesEliminarFecha();
-window.addEventListener("load", function() {
-  setInterval(() => {
-    guardarEstado();
-  }, 1000 * 60 * 5);
-});
+  initEditors();
+  crearBotonesEliminarFecha();
+  window.addEventListener("load", function() {
+    setInterval(() => {
+      guardarEstado();
+    }, 1000 * 60 * 5);
+  });
+}
 
 /////////////////////////////
 
