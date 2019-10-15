@@ -107,8 +107,12 @@ function cargarEstado() {
         crearNuevaHoja();
       }
       for (let i = 0; i < hojas.length; i++) {
-        document.getElementById(`fecha-${i}`).innerHTML =
-          localData.hojas[i].fecha;
+        if (localData.hojas[i].fecha) {
+          document.getElementById(`fecha-${i}`).innerHTML =
+            localData.hojas[i].fecha;
+        } else {
+          borrarElementoHTML(`fecha-container-${i}`);
+        }
         document.getElementById(`editor-${i}`).innerHTML =
           localData.hojas[i].cuerpo;
       }
