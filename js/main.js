@@ -56,8 +56,11 @@ function borrarElementoHTML(idHTML) {
  * @param {int} numHoja El numero que especifica la hoja
  */
 function guardarHoja(numHoja) {
+  var fecha = document.getElementById(`fecha-${numHoja}`)
+    ? document.getElementById(`fecha-${numHoja}`)
+    : "";
   return {
-    fecha: document.getElementById(`fecha-${numHoja}`).innerHTML,
+    fecha: fecha,
     cuerpo: document.getElementById(`editor-${numHoja}`).innerHTML
   };
 }
