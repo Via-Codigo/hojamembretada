@@ -56,8 +56,9 @@ function borrarElementoHTML(idHTML) {
  * @param {int} numHoja El numero que especifica la hoja
  */
 function guardarHoja(numHoja) {
+  console.log();
   var fecha = document.getElementById(`fecha-${numHoja}`)
-    ? document.getElementById(`fecha-${numHoja}`)
+    ? document.getElementById(`fecha-${numHoja}`).innerHTML
     : "";
   return {
     fecha: fecha,
@@ -101,10 +102,10 @@ function cargarEstado() {
       var hojas = localData.hojas;
 
       var currentHojas = document.getElementsByClassName("hoja").length;
-
-      while (currentHojas < hojas.length - 1) {
-        currentHojas = document.getElementsByClassName("hoja").length;
+      console.log(currentHojas);
+      while (currentHojas < hojas.length) {
         crearNuevaHoja();
+        currentHojas = document.getElementsByClassName("hoja").length;
       }
       for (let i = 0; i < hojas.length; i++) {
         if (localData.hojas[i].fecha) {
