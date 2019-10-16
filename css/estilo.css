@@ -150,6 +150,17 @@ a {
   font-size: 12px;
 }
 
+.viacodigo_contenido ul,
+.viacodigo_contenido ol {
+  padding: 0.5cm;
+}
+.viacodigo_contenido ul {
+  list-style: disc;
+}
+
+.viacodigo_contenido ol {
+  list-style: decimal;
+}
 .contenido-carta {
   padding-right: 5rem;
 }
